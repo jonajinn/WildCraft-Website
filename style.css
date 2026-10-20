@@ -8,6 +8,181 @@
     font-family: "Poppins", sans-serif
 }
 
+
+/* Mobile Phones*/
+@media screen and (max-width: 600px) {
+    img,
+    video{
+        max-width: 250%;  
+    }
+    
+    nav{
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    /* Header H2 Content */
+    .header-content h2{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 1px;
+    -webkit-text-stroke: 1px #171734;
+    text-shadow: 0 5px 2px #171734, 0 0 10px #8d82c7;
+    }
+
+
+    /* Discord Button on Navbar */
+    nav .login button{
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background: #5865F2;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    }
+
+    nav .login img{
+        max-width: 80px;
+        width: 80px;
+        height: 12px;
+    }
+
+    /*Paragraph Format on Header-Content*/
+    header .header-content p{
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        width: 450px;
+        text-align: center;
+    }  
+
+    header .header-content .header-text{
+        font-size: 18px;
+    }
+
+    header .header-content .header-subtext{
+        color: #b4b4b4;
+    }
+
+    /*Discord Button on Header-Content*/
+    header .join-button a{
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    }
+
+    header .join-button img{
+        width: 90px;
+        height: 13px;
+    }
+    /* Discord Button Background on Header-Content */
+    header .join-button{
+    margin-top: 5px;
+    background: #5865F2;
+    padding: 10px 15px;
+    border-radius: 5px;
+    }
+    /*Discord Button Hover Settings*/
+    header .join-button:hover{
+    background: #8d82c7;
+    }
+}
+
+
+
+
+
+/* PC */
+@media screen and (min-width: 1325px) {
+    img,
+    video{
+        max-width: 150%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    nav{
+    padding: 20px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    /* Header H2 Content */
+    .header-content h2{
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 1px;
+        -webkit-text-stroke: 1px #171734;
+        text-shadow: 0 5px 2px #171734, 0 0 10px #8d82c7;
+    }
+
+    /* Paragraph Format on Header-Content*/
+     header .header-content p{
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        width: 550px;
+        text-align: center;
+    }  
+
+    header .header-content .header-text{
+        font-size: 22px;
+    }
+
+    header .header-content .header-subtext{
+        color: #b4b4b4;
+    }
+
+    /* Discord Button on Navbar */
+    nav .login button{
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    background: #5865F2;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    }
+
+    nav .login img{
+    width: 90px;
+    height: 13px;
+    }
+
+    /*Discord Button on Header-Content*/
+    header .join-button a{
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    }
+
+    header .join-button img{
+        width: 90px;
+        height: 13px;
+    }
+    /* Discord Button Background on Header-Content */
+    header .join-button{
+    margin-top: 5px;
+    background: #5865F2;
+    padding: 10px 15px;
+    border-radius: 5px;
+    }
+    /*Discord Button Hover Settings*/
+    header .join-button:hover{
+    background: #8d82c7;
+    }
+
+}
+
+
+
+
+
 body{
     background: #20021a;
     color: #fff;
@@ -33,36 +208,12 @@ img{
     object-fit: cover;
 }
 
-nav{
-    padding: 20px 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 nav .logo img{
     width: 150px;
     height: 25px;
 }
 
-nav .links a:not(:last-child){
-    margin-right: 20px;
-}
 
-nav .login button{
-    padding: 8px 14px;
-    border: none;
-    cursor: pointer;
-    background: #5865F2;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #fff;
-}
-
-nav .login img{
-    width: 90px;
-    height: 13px;
-}
 
 header{
     margin-top: 100px;
@@ -79,34 +230,14 @@ header{
     align-items: center;
 }
 
-.header-content h2{
-    font-size: 60px;
-    font-weight: 700;
-    margin-bottom: 1px;
-    -webkit-text-stroke: 1px #171734;
-    text-shadow: 0 5px 2px #171734, 0 0 10px #8d82c7;
-}
+
 
 header .header-content .header-subtitle{
     color: #cbf2ff;
     
 }
 
-header .header-content p{
-    font-size: 15px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    width: 550px;
-    text-align: center;
-}
 
-header .header-content .header-text{
-    font-size: 22px;
-}
-
-header .header-content .header-subtext{
-    color: #b4b4b4;
-}
 
 .logo-image{
     margin-top: 0 auto;
@@ -118,24 +249,4 @@ header .header-content .header-subtext{
     display: block;
 }
 
-.header-content h3{
-    margin-top: 0;
-}
 
-header .join-button{
-    margin-top: 20px;
-}
-
-
-header .join-button a{
-    padding: 10px 20px;
-    border-radius: 5px;
-    background:#5865F2;
-    color: white;
-    font-size: 18px;
-}
-
-header .join-button img{
-    width: 90px;
-    height: 13px;
-}

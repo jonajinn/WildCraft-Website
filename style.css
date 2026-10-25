@@ -23,6 +23,11 @@ html, body {
         max-width: 250%;  
     }
     
+    /*This is to Zoom in background to fill the screen*/
+    video{
+        transform: scale(1.3);
+    }
+
     nav{
     padding: 20px 25px;
     display: flex;
@@ -97,6 +102,55 @@ html, body {
     background: #8d82c7;
     }
 }
+
+/*Iphone 16 */
+@media screen and (max-width: 393px) {
+    img,
+    video{
+        max-width: 250%;  
+        max-height: 250%;
+    }
+    
+    /*This is to Zoom in background to fill the screen*/
+    video{
+        transform: scale(1.6);
+    }
+
+    nav{
+    padding: 20px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    /* Header H2 Content */
+    .header-content h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 1px;
+    -webkit-text-stroke: 1px #171734;
+    text-shadow: 0 5px 2px #171734, 0 0 10px #8d82c7;
+    }
+
+     /*Paragraph Format on Header-Content*/
+    header .header-content p{
+        font-size: 8px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        width: 450px;
+        text-align: center;
+    }  
+
+     header .header-content .header-text{
+        font-size: 12px;
+    
+    }
+
+    header .header-content .header-subtext{
+        color: #b4b4b4;
+        width: 300px;
+
+    }
 
 
 
@@ -250,7 +304,7 @@ header .header-content .header-subtitle{
 }
 
 
-
+/* Logo Image */
 .logo-image{
     margin-top: 0 auto;
     object-fit: cover;
@@ -259,6 +313,22 @@ header .header-content .header-subtitle{
     height: 250px;
     padding-top: 0;
     display: block;
+
+    /* Animation for the Logo Image */
+    animation: logoFloat 3s ease-in-out infinite;
 }
 
-
+/*Floating Animation*/
+@keyframes logoFloat {
+    0% {
+        transform: translateY(0);
+        filter: drop-shadow(0 0 10px rgba(160, 70, 255, 0.4));
+    }
+    50% {
+        transform: translateY(-20px);
+        filter: drop-shadow(0 0 25px rgba(160, 70, 255, 0.8));
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
